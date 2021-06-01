@@ -10,8 +10,8 @@ class OutOfStock(Exception):
 
 def allocate(line: OrderLine, batches: List[Batch]) -> str:
     try:
-        batch = next(b for b in sorted(batches) if b.can_allocate(line))
-        batch.allocate(line)
+        batch = next(b for b in sorted(batches) if b.can_allocate(line))  # 找到首个can_allocate的batch
+        batch.allocate(line)  # 做allocate
         return batch.reference
     except StopIteration:
         raise OutOfStock(f"Out of stock for sku {line.sku}")
