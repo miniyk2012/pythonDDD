@@ -1,4 +1,5 @@
-from typing import Optional
+from __future__ import annotations
+from typing import Optional, Set, List
 from dataclasses import dataclass
 
 from datetime import date
@@ -16,10 +17,39 @@ class Batch:
         self.reference = ref
         self.sku = sku
         self.eta = eta
-        self.available_quantity = qty
+        self._purchased_quantitiry = qty
+        self._allocations = set()  # type: Set[OrderLine]
+
+    def __gt__(self, other: Batch):
+        if self.eta is None:
+            return False
+        if other.eta is None:
+            return True
+        return self.eta > other.eta
 
     def allocate(self, line: OrderLine):
-        self.available_quantity -= line.qty
+        if self.can_allocate(line):
+            self._allocations.add(line)
 
-    def can_allocate(self, small_line: OrderLine) -> bool:
-        return self.sku == small_line.sku and self.available_quantity >= small_line.qty
+    def can_allocate(self, line: OrderLine) -> bool:
+        return self.sku == line.sku and self.available_quantity >= line.qty
+
+    def deallocate(self, line: OrderLine):
+        if line in self._allocations:
+            self._allocations.remove(line)
+
+    @property
+    def allocated_quantity(self):
+        return sum(line.qty for line in self._allocations)
+
+    @property
+    def available_quantity(self) -> int:
+        return self._purchased_quantitiry - self.allocated_quantity
+
+
+def allocate(line: OrderLine, batches: List[Batch]) -> str:
+    for batch in sorted(batches):
+        if batch.can_allocate(line):
+            batch.allocate(line)
+            break
+    return batch.reference
