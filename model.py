@@ -43,12 +43,12 @@ class Batch:
     def __hash__(self):
         return hash(self.reference)
 
-    def __gt__(self, other):
+    def __lt__(self, other):
         if self.eta is None:
-            return False
-        if other.eta is None:
             return True
-        return self.eta > other.eta
+        if other.eta is None:
+            return False
+        return self.eta < other.eta
 
     def allocate(self, line: OrderLine):
         if self.can_allocate(line):
