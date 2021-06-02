@@ -5,6 +5,10 @@ from dataclasses import dataclass
 from datetime import date
 
 
+class OutOfStock(Exception):
+    pass
+
+
 @dataclass(frozen=True)  # 对字段赋值将会产生异常, 模拟了只读的冻结实例
 class OrderLine:
     orderid: str
@@ -48,8 +52,14 @@ class Batch:
 
 
 def allocate(line: OrderLine, batches: List[Batch]) -> str:
-    for batch in sorted(batches):
-        if batch.can_allocate(line):
-            batch.allocate(line)
-            break
-    return batch.reference
+    # for batch in sorted(batches):
+    #     if batch.can_allocate(line):
+    #         batch.allocate(line)
+    #         break
+    try:
+        batch = next(batch for batch in sorted(batches) if batch.can_allocate(line))
+        batch.allocate(line)
+        return batch.reference
+    except StopIteration:
+        raise OutOfStock(f'Out of stock for sku {line.sku}')
+
