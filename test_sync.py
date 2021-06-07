@@ -5,6 +5,8 @@ from sync import sync, determine_actions
 
 
 class TestE2E:
+    """Test End to End"""
+
     @staticmethod
     def test_when_a_file_exists_in_the_source_but_not_the_destination():
         try:
