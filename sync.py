@@ -5,14 +5,14 @@ from pathlib import Path
 
 
 def sync(source, dest):
-    # imperative shell step 1, gather inputs
+    # imperative shell step 1, gather inputs, 命令式的
     source_hashes = read_paths_and_hashes(source)
     dest_hashes = read_paths_and_hashes(dest)
 
-    # step 2: call functional core
+    # step 2: call functional core, 这是核心逻辑
     actions = determine_actions(source_hashes, dest_hashes, source, dest)
 
-    # imperative shell step 3, apply outputs
+    # imperative shell step 3, apply outputs, 命令式的
     for action, *paths in actions:
         if action == "COPY":
             shutil.copyfile(*paths)
