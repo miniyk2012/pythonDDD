@@ -22,6 +22,20 @@ def sync(source, dest):
             os.remove(paths[0])
 
 
+def synchronise_dirs(reader, filesystem, filesystem2, source_root, dest_root):
+    source_hashes = reader(source_root)
+    dest_hashes = reader(dest_root)
+
+    actions = determine_actions(source_hashes, dest_hashes, source_root, dest_root)
+    for action, *paths in actions:
+        if action == "COPY":
+            filesystem.copyfile(*paths)
+        if action == "MOVE":
+            filesystem.move(*paths)
+        if action == "DELETE":
+            filesystem2.remove(paths[0])
+
+
 BLOCKSIZE = 65536
 
 
@@ -57,4 +71,4 @@ def determine_actions(source_hashes, dest_hashes, source_folder, dest_folder):
 
     for sha, filename in dest_hashes.items():
         if sha not in source_hashes:
-            yield "DELETE", dest_folder / filename
+            yield "DELETE", Path(dest_folder) / Path(filename)
