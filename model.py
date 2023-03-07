@@ -19,12 +19,14 @@ def allocate(line: OrderLine, batches: List[Batch]) -> str:
 
 @dataclass(unsafe_hash=True)
 class OrderLine:
+    """Value Object, 它由它所具有的数据唯一标识，不可变(immutable)"""
     orderid: str
     sku: str
     qty: int
 
 
 class Batch:
+    """Entity, 由reference唯一标识"""
     def __init__(self, ref: str, sku: str, qty: int, eta: Optional[date]):
         self.reference = ref
         self.sku = sku
