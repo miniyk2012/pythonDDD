@@ -39,7 +39,7 @@ def synchronise_dirs(reader, filesystem, filesystem2, source_root, dest_root):
 BLOCKSIZE = 65536
 
 
-def hash_file(path):
+def hash_file(path: Path):
     hasher = hashlib.sha1()
     with path.open("rb") as file:
         buf = file.read(BLOCKSIZE)
