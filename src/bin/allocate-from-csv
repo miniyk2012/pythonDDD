@@ -7,6 +7,7 @@ from allocation.service_layer import csv_uow, services
 
 
 def main(folder):
+    print(sys.path)
     orders_path = Path(folder) / "orders.csv"
     uow = csv_uow.CsvUnitOfWork(folder)
     with orders_path.open() as f:
