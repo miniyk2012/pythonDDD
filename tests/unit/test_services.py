@@ -1,19 +1,24 @@
 from unittest import mock
+
 import pytest
-from allocation.adapters import repository
+
 from allocation.service_layer import services, unit_of_work
 
 
-class FakeRepository(repository.AbstractRepository):
+class FakeRepository:
     def __init__(self, products):
-        super().__init__()
+        self.seen = set()  # type: Set[model.Product]
         self._products = set(products)
 
-    def _add(self, product):
+    def add(self, product):
+        self.seen.add(product)
         self._products.add(product)
 
-    def _get(self, sku):
-        return next((p for p in self._products if p.sku == sku), None)
+    def get(self, sku):
+        product = next((p for p in self._products if p.sku == sku), None)
+        if product:
+            self.seen.add(product)
+        return product
 
 
 class FakeUnitOfWork(unit_of_work.AbstractUnitOfWork):
