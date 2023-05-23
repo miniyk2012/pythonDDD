@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a8fe11a-ce86-4386-8fa5-5bf920e42962" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/allocation/entrypoints/flask_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/allocation/entrypoints/flask_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/allocation/service_layer/unit_of_work.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/allocation/service_layer/unit_of_work.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/unit/test_services.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/test_services.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,44 +44,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Python tests.pytest in unit">
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="code" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/e2e" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/e2e/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for tests.integration.test_uow.test_concurrent_updates_to_version_are_not_allowed" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+}</component>
+  <component name="RunManager" selected="Python tests.pytest in test_services.py">
+    <configuration name="pytest for tests.integration.test_uow.test_concurrent_updates_to_version_are_not_allowed" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -89,17 +69,19 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;tests.integration.test_uow.test_concurrent_updates_to_version_are_not_allowed&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_services.test_add_batch_for_new_product" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for tests.integration.test_uow.test_rolls_back_on_error" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/unit" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -107,16 +89,16 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_services.test_add_batch_for_new_product&quot;" />
+      <option name="_new_target" value="&quot;tests.integration.test_uow.test_rolls_back_on_error&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_services.test_sends_email_on_out_of_stock_error" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for tests.integration.test_uow.test_rolls_back_uncommitted_work_by_default" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/unit" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -124,11 +106,28 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_services.test_sends_email_on_out_of_stock_error&quot;" />
+      <option name="_new_target" value="&quot;tests.integration.test_uow.test_rolls_back_uncommitted_work_by_default&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in unit" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for tests.integration.test_uow.test_uow_can_retrieve_a_batch_and_allocate_to_it" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.integration.test_uow.test_uow_can_retrieve_a_batch_and_allocate_to_it&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test_services.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -141,24 +140,24 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/unit&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/unit/test_services.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.main" />
-      <item itemvalue="Python tests.pytest in unit" />
-      <item itemvalue="Python tests.pytest for test_services.test_add_batch_for_new_product" />
-      <item itemvalue="Python tests.pytest for test_services.test_sends_email_on_out_of_stock_error" />
-      <item itemvalue="Python tests.Python tests for tests.integration.test_uow.test_concurrent_updates_to_version_are_not_allowed" />
+      <item itemvalue="Python tests.pytest for tests.integration.test_uow.test_concurrent_updates_to_version_are_not_allowed" />
+      <item itemvalue="Python tests.pytest for tests.integration.test_uow.test_rolls_back_on_error" />
+      <item itemvalue="Python tests.pytest for tests.integration.test_uow.test_rolls_back_uncommitted_work_by_default" />
+      <item itemvalue="Python tests.pytest for tests.integration.test_uow.test_uow_can_retrieve_a_batch_and_allocate_to_it" />
+      <item itemvalue="Python tests.pytest in test_services.py" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest in unit" />
-        <item itemvalue="Python tests.pytest for test_services.test_sends_email_on_out_of_stock_error" />
-        <item itemvalue="Python tests.pytest for test_services.test_add_batch_for_new_product" />
-        <item itemvalue="Python tests.Python tests for tests.integration.test_uow.test_concurrent_updates_to_version_are_not_allowed" />
-        <item itemvalue="Python.main" />
+        <item itemvalue="Python tests.pytest in test_services.py" />
+        <item itemvalue="Python tests.pytest for tests.integration.test_uow.test_concurrent_updates_to_version_are_not_allowed" />
+        <item itemvalue="Python tests.pytest for tests.integration.test_uow.test_rolls_back_on_error" />
+        <item itemvalue="Python tests.pytest for tests.integration.test_uow.test_rolls_back_uncommitted_work_by_default" />
+        <item itemvalue="Python tests.pytest for tests.integration.test_uow.test_uow_can_retrieve_a_batch_and_allocate_to_it" />
       </list>
     </recent_temporary>
   </component>
@@ -176,7 +175,8 @@
       <workItem from="1684374916307" duration="1676000" />
       <workItem from="1684376600686" duration="4000" />
       <workItem from="1684376614319" duration="3093000" />
-      <workItem from="1684722500431" duration="1459000" />
+      <workItem from="1684722500431" duration="4538000" />
+      <workItem from="1684803210118" duration="834000" />
     </task>
     <servers />
   </component>
@@ -214,9 +214,10 @@
     <SUITE FILE_PATH="coverage/code$test_value_obj.coverage" NAME="test_value_obj Coverage Results" MODIFIED="1622551295539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$pytest_for_test_sync_test_when_a_file_has_been_renamed_in_the_source.coverage" NAME="pytest for test_sync.test_when_a_file_has_been_renamed_in_the_source Coverage Results" MODIFIED="1623057611528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$allocate_from_csv.coverage" NAME="allocate-from-csv Coverage Results" MODIFIED="1684377365216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/bin" />
-    <SUITE FILE_PATH="coverage/code$pytest_for_test_services_test_sends_email_on_out_of_stock_error.coverage" NAME="pytest for test_services.test_sends_email_on_out_of_stock_error Coverage Results" MODIFIED="1684723988434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/unit" />
+    <SUITE FILE_PATH="coverage/code$pytest_for_test_services_test_sends_email_on_out_of_stock_error.coverage" NAME="pytest for test_services.test_sends_email_on_out_of_stock_error Coverage Results" MODIFIED="1684803895951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/unit" />
     <SUITE FILE_PATH="coverage/code$pytest_for_test_sync_test_when_a_file_exists_in_the_source_but_not_the_destination.coverage" NAME="pytest for test_sync.test_when_a_file_exists_in_the_source_but_not_the_destination Coverage Results" MODIFIED="1623057610113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$pytest_for_test_value_obj_test_field.coverage" NAME="pytest for test_value_obj.test_field Coverage Results" MODIFIED="1622551579332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/code$pytest_for_test_services_test_add_batch_for_existing_product.coverage" NAME="pytest for test_services.test_add_batch_for_existing_product Coverage Results" MODIFIED="1684803828717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/unit" />
     <SUITE FILE_PATH="coverage/code$pytest_for_test_sync_TestE2E_test_fake_di_sync.coverage" NAME="pytest for test_sync.TestE2E.test_fake_di_sync Coverage Results" MODIFIED="1623060766266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$pytest_for_test_uow_test_rolls_back_on_error.coverage" NAME="pytest for test_uow.test_rolls_back_on_error Coverage Results" MODIFIED="1683523145866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/integration" />
     <SUITE FILE_PATH="coverage/code$pytest_for_test_sync_TestE2E_test_di_sync_when_a_file_has_been_renamed_in_the_source.coverage" NAME="pytest for test_sync.TestE2E.test_di_sync_when_a_file_has_been_renamed_in_the_source Coverage Results" MODIFIED="1623060996671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -226,34 +227,46 @@
     <SUITE FILE_PATH="coverage/code$pytest_for_test_uow_test_rolls_back_uncommitted_work_by_default.coverage" NAME="pytest for test_uow.test_rolls_back_uncommitted_work_by_default Coverage Results" MODIFIED="1683523056883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/integration" />
     <SUITE FILE_PATH="coverage/code$pytest_for_test_model_test_equal_lineorder.coverage" NAME="pytest for test_model.test_equal_lineorder Coverage Results" MODIFIED="1622548666330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$pytest_for_test_model_test_can_allocate_if_available_greater_than_required.coverage" NAME="pytest for test_model.test_can_allocate_if_available_greater_than_required Coverage Results" MODIFIED="1622541134448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/code$unit_of_work.coverage" NAME="unit_of_work Coverage Results" MODIFIED="1684803394871" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/allocation/service_layer" />
     <SUITE FILE_PATH="coverage/code$pytest_for_test_allocate_test_prefers_current_stock_batches_to_shipments.coverage" NAME="pytest for test_allocate.test_prefers_current_stock_batches_to_shipments Coverage Results" MODIFIED="1678325289434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/code$pytest_in_test_product_py.coverage" NAME="pytest in test_product.py Coverage Results" MODIFIED="1684803915149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/unit" />
+    <SUITE FILE_PATH="coverage/code$pytest_in_test_services_py.coverage" NAME="pytest in test_services.py Coverage Results" MODIFIED="1684804008995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/unit" />
     <SUITE FILE_PATH="coverage/code$pytest_for_test_sync_TestE2E.coverage" NAME="pytest for test_sync.TestE2E Coverage Results" MODIFIED="1623060276781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$pytest_for_test_repository_test_repository_can_retrieve_a_batch_with_allocations.coverage" NAME="pytest for test_repository.test_repository_can_retrieve_a_batch_with_allocations Coverage Results" MODIFIED="1679233685738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/integration" />
     <SUITE FILE_PATH="coverage/code$main.coverage" NAME="main Coverage Results" MODIFIED="1684458910100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/e2e" />
     <SUITE FILE_PATH="coverage/code$pytest_for_test_csv_test_cli_app_reads_csvs_with_batches_and_orders_and_outputs_allocations.coverage" NAME="pytest for test_csv.test_cli_app_reads_csvs_with_batches_and_orders_and_outputs_allocations Coverage Results" MODIFIED="1684376954122" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/e2e" />
+    <SUITE FILE_PATH="coverage/code$pytest_in_integration.coverage" NAME="pytest in integration Coverage Results" MODIFIED="1684724009615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/integration" />
     <SUITE FILE_PATH="coverage/code$pytest_for_test_batches_test_can_only_deallocate_allocated_lines.coverage" NAME="pytest for test_batches.test_can_only_deallocate_allocated_lines Coverage Results" MODIFIED="1678151565019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$pytest_for_test_sync_TestE2E_test_fake_di_sync_dest_has_file_source_dont_have.coverage" NAME="pytest for test_sync.TestE2E.test_fake_di_sync_dest_has_file_source_dont_have Coverage Results" MODIFIED="1623060923445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$pytest_for_test_sync_TestDiE2E_test_fake_di_sync_move.coverage" NAME="pytest for test_sync.TestDiE2E.test_fake_di_sync_move Coverage Results" MODIFIED="1678414607029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$pytest_for_test_services_test_returns_allocation.coverage" NAME="pytest for test_services.test_returns_allocation Coverage Results" MODIFIED="1679230583110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$.coverage" NAME=" Coverage Results" MODIFIED="1684461545965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$pytest_for_test_orm_test_orderline_mapper_can_save_lines.coverage" NAME="pytest for test_orm.test_orderline_mapper_can_save_lines Coverage Results" MODIFIED="1678408289514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/code$pytest_for_test_services_test_allocate_returns_allocation.coverage" NAME="pytest for test_services.test_allocate_returns_allocation Coverage Results" MODIFIED="1684803821855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/unit" />
+    <SUITE FILE_PATH="coverage/code$pytest_for_tests_integration_test_uow_test_uow_can_retrieve_a_batch_and_allocate_to_it.coverage" NAME="pytest for tests.integration.test_uow.test_uow_can_retrieve_a_batch_and_allocate_to_it Coverage Results" MODIFIED="1684803925174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$pytest_for_test_csv_test_cli_app_also_reads_existing_allocations_and_can_append_to_them.coverage" NAME="pytest for test_csv.test_cli_app_also_reads_existing_allocations_and_can_append_to_them Coverage Results" MODIFIED="1684377629189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/e2e" />
-    <SUITE FILE_PATH="coverage/code$pytest_for_test_services_test_add_batch_for_new_product.coverage" NAME="pytest for test_services.test_add_batch_for_new_product Coverage Results" MODIFIED="1684626966662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/unit" />
+    <SUITE FILE_PATH="coverage/code$pytest_for_test_services_test_allocate_errors_for_invalid_sku.coverage" NAME="pytest for test_services.test_allocate_errors_for_invalid_sku Coverage Results" MODIFIED="1684803814911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/unit" />
+    <SUITE FILE_PATH="coverage/code$pytest_for_test_services_test_add_batch_for_new_product.coverage" NAME="pytest for test_services.test_add_batch_for_new_product Coverage Results" MODIFIED="1684803878569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/unit" />
+    <SUITE FILE_PATH="coverage/code$pytest_for_tests_integration_test_uow_test_concurrent_updates_to_version_are_not_allowed.coverage" NAME="pytest for tests.integration.test_uow.test_concurrent_updates_to_version_are_not_allowed Coverage Results" MODIFIED="1684803933522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$pytest_for_test_model_test_cannot_allocate_if_available_smaller_than_required.coverage" NAME="pytest for test_model.test_cannot_allocate_if_available_smaller_than_required Coverage Results" MODIFIED="1622541165709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/code$pytest_for_test_batches_test_allocating_to_a_batch_reduces_the_available_quantity.coverage" NAME="pytest for test_batches.test_allocating_to_a_batch_reduces_the_available_quantity Coverage Results" MODIFIED="1678151358642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/code$pytest_for_test_batches_test_allocating_to_a_batch_reduces_the_available_quantity.coverage" NAME="pytest for test_batches.test_allocating_to_a_batch_reduces_the_available_quantity Coverage Results" MODIFIED="1684803909632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/unit" />
     <SUITE FILE_PATH="coverage/code$pytest_for_unit_test_batches_test_allocating_to_a_batch_reduces_the_available_quantity.coverage" NAME="pytest for unit.test_batches.test_allocating_to_a_batch_reduces_the_available_quantity Coverage Results" MODIFIED="1683432009742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/code$pytest_for_integration_test_uow_test_rolls_back_uncommitted_work_by_default.coverage" NAME="pytest for integration.test_uow.test_rolls_back_uncommitted_work_by_default Coverage Results" MODIFIED="1683507063928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/code$pytest_for_test_model_test_can_allocate_if_available_equal_to_required.coverage" NAME="pytest for test_model.test_can_allocate_if_available_equal_to_required Coverage Results" MODIFIED="1622541221831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$pytest_for_integration_test_repository_test_repository_can_retrieve_a_batch_with_allocations.coverage" NAME="pytest for integration.test_repository.test_repository_can_retrieve_a_batch_with_allocations Coverage Results" MODIFIED="1683508130045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/code$pytest_for_test_model_test_allocating_to_a_batch_reduces_the_available_quantity.coverage" NAME="pytest for test_model.test_allocating_to_a_batch_reduces_the_available_quantity Coverage Results" MODIFIED="1622540799995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/code$pytest_for_tests_integration_test_uow_test_rolls_back_on_error.coverage" NAME="pytest for tests.integration.test_uow.test_rolls_back_on_error Coverage Results" MODIFIED="1684803930364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/code$pytest_for_tests_integration_test_uow_test_rolls_back_uncommitted_work_by_default.coverage" NAME="pytest for tests.integration.test_uow.test_rolls_back_uncommitted_work_by_default Coverage Results" MODIFIED="1684803928512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$pytest_for_test_sync_TestE2E_test_when_a_file_has_been_renamed_in_the_source.coverage" NAME="pytest for test_sync.TestE2E.test_when_a_file_has_been_renamed_in_the_source Coverage Results" MODIFIED="1623057614396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$pytest_for_test_allocate_test_raises_out_of_stock_exception_if_cannot_allocate.coverage" NAME="pytest for test_allocate.test_raises_out_of_stock_exception_if_cannot_allocate Coverage Results" MODIFIED="1678325450948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$pytest_for_test_model_test_allocation_is_idempotent.coverage" NAME="pytest for test_model.test_allocation_is_idempotent Coverage Results" MODIFIED="1622548611530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/code$pytest_in_test_uow_py.coverage" NAME="pytest in test_uow.py Coverage Results" MODIFIED="1684803583589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$pytest_for_test_model_test_prefers_earlier_batches.coverage" NAME="pytest for test_model.test_prefers_earlier_batches Coverage Results" MODIFIED="1622594971368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$pytest_for_test_model_test_returns_allocated_batch_ref.coverage" NAME="pytest for test_model.test_returns_allocated_batch_ref Coverage Results" MODIFIED="1622595385638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$pytest_for_test_batches_test_allocation_is_idempotent.coverage" NAME="pytest for test_batches.test_allocation_is_idempotent Coverage Results" MODIFIED="1678152326662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$pytest_for_test_repository_test_repository_can_save_a_batch.coverage" NAME="pytest for test_repository.test_repository_can_save_a_batch Coverage Results" MODIFIED="1622807455250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$pytest_for_test_api_test_happy_path_returns_201_and_allocated_batch.coverage" NAME="pytest for test_api.test_happy_path_returns_201_and_allocated_batch Coverage Results" MODIFIED="1678932692660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/code$pytest_for_test_services_test_allocate_commits.coverage" NAME="pytest for test_services.test_allocate_commits Coverage Results" MODIFIED="1684803884355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/unit" />
     <SUITE FILE_PATH="coverage/code$pytest_for_test_sync_TestE2E_test_actual_di_sync.coverage" NAME="pytest for test_sync.TestE2E.test_actual_di_sync Coverage Results" MODIFIED="1623060516698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$pytest_for_test_services_test_error_for_invalid_sku.coverage" NAME="pytest for test_services.test_error_for_invalid_sku Coverage Results" MODIFIED="1679230586141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$pytest_for_test_uow_test_uow_can_retrieve_a_batch_and_allocate_to_it.coverage" NAME="pytest for test_uow.test_uow_can_retrieve_a_batch_and_allocate_to_it Coverage Results" MODIFIED="1683522992590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/integration" />

@@ -1,10 +1,11 @@
 # pylint: disable=attribute-defined-outside-init
 from __future__ import annotations
+
 import abc
+
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.orm.session import Session
-
 
 from allocation import config
 from allocation.adapters import repository
@@ -20,8 +21,32 @@ class AbstractUnitOfWork(abc.ABC):
     def __exit__(self, *args):
         self.rollback()
 
+    @abc.abstractmethod
     def commit(self):
-        self._commit()
+        raise NotImplementedError
+
+    @abc.abstractmethod
+    def rollback(self):
+        raise NotImplementedError
+
+
+class EventsUnitOfWork(AbstractUnitOfWork):
+    def __init__(self, uow: AbstractUnitOfWork):
+        self.uow = uow
+        self.products = uow.products
+
+    def __enter__(self):
+        self.uow.__enter__()
+        return self
+
+    def __exit__(self, *args):
+        self.uow.__exit__(*args)
+
+    def rollback(self):
+        self.uow.rollback()
+
+    def commit(self):
+        self.uow.commit()
         self.publish_events()
 
     def publish_events(self):
@@ -29,14 +54,6 @@ class AbstractUnitOfWork(abc.ABC):
             while product.events:
                 event = product.events.pop(0)
                 messagebus.handle(event)
-
-    @abc.abstractmethod
-    def _commit(self):
-        raise NotImplementedError
-
-    @abc.abstractmethod
-    def rollback(self):
-        raise NotImplementedError
 
 
 DEFAULT_SESSION_FACTORY = sessionmaker(
@@ -62,7 +79,7 @@ class SqlAlchemyUnitOfWork(AbstractUnitOfWork):
         super().__exit__(*args)
         self.session.close()
 
-    def _commit(self):
+    def commit(self):
         self.session.commit()
 
     def rollback(self):
