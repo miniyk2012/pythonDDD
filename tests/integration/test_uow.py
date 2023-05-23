@@ -78,7 +78,7 @@ def test_rolls_back_on_error(session_factory):
 def try_to_allocate(orderid, sku, exceptions):
     line = model.OrderLine(orderid, sku, 10)
     try:
-        with unit_of_work.SqlAlchemyUnitOfWork() as uow:
+        with unit_of_work.EventsUnitOfWork(unit_of_work.SqlAlchemyUnitOfWork()) as uow:
             product = uow.products.get(sku=sku)
             product.allocate(line)
             time.sleep(0.2)
@@ -121,5 +121,5 @@ def test_concurrent_updates_to_version_are_not_allowed(postgres_session_factory)
         dict(sku=sku),
     )
     assert orders.rowcount == 1
-    with unit_of_work.SqlAlchemyUnitOfWork() as uow:
-        uow.session.execute("select 1")
+    with unit_of_work.EventsUnitOfWork(unit_of_work.SqlAlchemyUnitOfWork()) as uow:
+        uow.uow.session.execute("select 1")

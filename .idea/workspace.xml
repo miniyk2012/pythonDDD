@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a8fe11a-ce86-4386-8fa5-5bf920e42962" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/allocation/service_layer/unit_of_work.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/allocation/service_layer/unit_of_work.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/integration/test_uow.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/integration/test_uow.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +57,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python tests.pytest in test_services.py">
+  <component name="RunManager" selected="Python tests.pytest for tests.integration.test_uow.test_rolls_back_on_error">
     <configuration name="pytest for tests.integration.test_uow.test_concurrent_updates_to_version_are_not_allowed" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="code" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -150,9 +152,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for tests.integration.test_uow.test_rolls_back_on_error" />
         <item itemvalue="Python tests.pytest in test_services.py" />
         <item itemvalue="Python tests.pytest for tests.integration.test_uow.test_concurrent_updates_to_version_are_not_allowed" />
-        <item itemvalue="Python tests.pytest for tests.integration.test_uow.test_rolls_back_on_error" />
         <item itemvalue="Python tests.pytest for tests.integration.test_uow.test_rolls_back_uncommitted_work_by_default" />
         <item itemvalue="Python tests.pytest for tests.integration.test_uow.test_uow_can_retrieve_a_batch_and_allocate_to_it" />
       </list>
@@ -252,7 +254,7 @@
     <SUITE FILE_PATH="coverage/code$pytest_for_test_model_test_can_allocate_if_available_equal_to_required.coverage" NAME="pytest for test_model.test_can_allocate_if_available_equal_to_required Coverage Results" MODIFIED="1622541221831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$pytest_for_integration_test_repository_test_repository_can_retrieve_a_batch_with_allocations.coverage" NAME="pytest for integration.test_repository.test_repository_can_retrieve_a_batch_with_allocations Coverage Results" MODIFIED="1683508130045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/code$pytest_for_test_model_test_allocating_to_a_batch_reduces_the_available_quantity.coverage" NAME="pytest for test_model.test_allocating_to_a_batch_reduces_the_available_quantity Coverage Results" MODIFIED="1622540799995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/code$pytest_for_tests_integration_test_uow_test_rolls_back_on_error.coverage" NAME="pytest for tests.integration.test_uow.test_rolls_back_on_error Coverage Results" MODIFIED="1684803930364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/code$pytest_for_tests_integration_test_uow_test_rolls_back_on_error.coverage" NAME="pytest for tests.integration.test_uow.test_rolls_back_on_error Coverage Results" MODIFIED="1684804498584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$pytest_for_tests_integration_test_uow_test_rolls_back_uncommitted_work_by_default.coverage" NAME="pytest for tests.integration.test_uow.test_rolls_back_uncommitted_work_by_default Coverage Results" MODIFIED="1684803928512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$pytest_for_test_sync_TestE2E_test_when_a_file_has_been_renamed_in_the_source.coverage" NAME="pytest for test_sync.TestE2E.test_when_a_file_has_been_renamed_in_the_source Coverage Results" MODIFIED="1623057614396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$pytest_for_test_allocate_test_raises_out_of_stock_exception_if_cannot_allocate.coverage" NAME="pytest for test_allocate.test_raises_out_of_stock_exception_if_cannot_allocate Coverage Results" MODIFIED="1678325450948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

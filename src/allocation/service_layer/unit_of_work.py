@@ -33,10 +33,10 @@ class AbstractUnitOfWork(abc.ABC):
 class EventsUnitOfWork(AbstractUnitOfWork):
     def __init__(self, uow: AbstractUnitOfWork):
         self.uow = uow
-        self.products = uow.products
 
     def __enter__(self):
         self.uow.__enter__()
+        self.products = self.uow.products
         return self
 
     def __exit__(self, *args):
