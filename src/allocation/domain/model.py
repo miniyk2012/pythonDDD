@@ -26,8 +26,8 @@ class Product:
         batch = next(b for b in self.batches if b.reference == ref)
         batch._purchased_quantity = qty
         while batch.available_quantity < 0:
-            line = batch.deallocate_one()
-            self.events.append(
+            line = batch.deallocate_one()  # 不断deallocate, 直到库存够用为止
+            self.events.append(  # 发出AllocationRequired事件
                 events.AllocationRequired(line.orderid, line.sku, line.qty)
             )
 
