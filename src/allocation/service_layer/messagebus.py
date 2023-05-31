@@ -1,5 +1,7 @@
 from __future__ import annotations
+
 from typing import List, Dict, Callable, Type, TYPE_CHECKING
+
 from allocation.domain import events
 from . import handlers
 
@@ -8,8 +10,8 @@ if TYPE_CHECKING:
 
 
 def handle(
-    event: events.Event,
-    uow: unit_of_work.AbstractUnitOfWork,
+        event: events.Event,
+        uow: unit_of_work.AbstractUnitOfWork,
 ):
     results = []
     queue = [event]
@@ -27,3 +29,47 @@ HANDLERS = {
     events.AllocationRequired: [handlers.allocate],
     events.OutOfStock: [handlers.send_out_of_stock_notification],
 }  # type: Dict[Type[events.Event], List[Callable]]
+
+
+class AbstractMessageBus:
+    HANDLERS = {
+        events.BatchCreated: [handlers.add_batch],
+        events.BatchQuantityChanged: [handlers.change_batch_quantity],
+        events.AllocationRequired: [handlers.allocate],
+        events.OutOfStock: [handlers.send_out_of_stock_notification],
+    }  # type: Dict[Type[events.Event], List[Callable]]
+
+    def handle(self, event: events.Event,
+               uow: unit_of_work.AbstractUnitOfWork):
+        pass
+
+
+class MessageBus(AbstractMessageBus):
+
+    def handle(self,
+               event: events.Event,
+               uow: unit_of_work.AbstractUnitOfWork,
+               ):
+        results = []
+        queue = [event]
+        while queue:
+            event = queue.pop(0)
+            for handler in self.HANDLERS[type(event)]:
+                results.append(handler(event, uow=uow))
+                queue.extend(uow.collect_new_events())
+        return results
+
+
+class FakeMessageBus(AbstractMessageBus):
+    def __init__(self):
+        self.events_published = []  # type: List[events.Event]
+
+    def handle(self,
+               event: events.Event,
+               uow: unit_of_work.AbstractUnitOfWork,
+               ):
+        results = []
+        for handler in self.HANDLERS[type(event)]:
+            results.append(handler(event, uow=uow))
+            self.events_published.extend(uow.collect_new_events())
+        return results
